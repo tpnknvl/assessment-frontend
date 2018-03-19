@@ -1,9 +1,9 @@
-import Ember from 'ember';
+import Ember       from 'ember';
 import EmberObject from '@ember/object';
-import Route from '@ember/routing/route';
-import sampleData from 'assessment-frontend/models/fixtures/sample-data';
+import Route       from 'assessment-frontend/baseRoute';
+import sampleData  from 'assessment-frontend/models/fixtures/sample-data';
 
-let Product = EmberObject.extend({
+const Product = EmberObject.extend({
   name: null,
   data: [],
   productDataSubset: Ember.computed('data', function() {
@@ -14,6 +14,7 @@ let Product = EmberObject.extend({
 export default Route.extend({
   model() {
     return EmberObject.create({
+      title: 'Product Page - Index - XYZ Corp',
       products: [
         Product.create({
           id: 'abc',
