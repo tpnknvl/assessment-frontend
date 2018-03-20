@@ -1,2 +1,60 @@
 // Style files in the pods folder are automatically loaded in.
 @import 'pod-styles';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+@import url('https://fonts.googleapis.com/css?family=Quantico');
+
+body {
+  margin      : 0;
+  padding     : 0;
+  font-weight : 300;
+  font-size   : 12px;
+  font-family : 'Source Sans Pro', sans-serif;
+  background-color: #f6fafd;
+}
+
+#header-navigation {
+  background-color: #0d3344;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  justify-content: space-between;
+
+  a {
+    color          : #fff;
+    text-transform : uppercase;
+    padding: 15px 10px;
+    cursor: pointer;
+    display: block;
+  }
+
+  ul, li {
+    margin     : 0;
+    padding    : 0;
+    list-style : none;
+  }
+
+  li a:hover, li.active a {
+    background-color: #07485f;
+  }
+
+  .left-menu {
+    display: flex;
+  }
+  .menu-items {
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+h3 {
+  margin: 0;
+  padding: 20px 10px 20px 70px;
+  font-size: 26px;
+  color: #fff;
+  font-family: 'Quantico', sans-serif;
+  background-color: #07485f;
+  background: #07485f url(avatar.png) no-repeat;
+  background-size: 46px;
+  background-position: 15px 50%;
+}
