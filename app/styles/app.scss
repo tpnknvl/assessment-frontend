@@ -41,8 +41,9 @@ body {
     display: flex;
   }
   .menu-items {
+    display: flex;
     li {
-      display: inline-block;
+      //display: inline-block;
     }
   }
 }
@@ -57,4 +58,73 @@ h3 {
   background: #07485f url(avatar.png) no-repeat;
   background-size: 46px;
   background-position: 15px 50%;
+}
+
+h4 {
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Quantico', sans-serif;
+}
+
+.description {
+  margin: 10px 0;
+  text-transform: uppercase;
+  color: #85949e;
+  font-weight: 300;
+  font-family: 'Quantico', sans-serif;
+}
+
+table {
+  background-color: #fff;
+  thead {
+    background-color: #f6fafd;
+  }
+    th, td {
+      padding: 6px;
+      border-bottom: 1px solid #eff0f2;
+    }
+    th {
+      padding: 8px 6px;
+    }
+  td {
+    border-bottom: 1px solid #eff0f2;
+  }
+}
+
+.content-wrapper {
+  display: flex;
+
+  .table {
+    margin-top: 20px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.4);
+  }
+
+  .table-header {
+    border-bottom: 1px solid #d6d8db;
+    display: flex;
+    background-color: #fff;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .table-footer {
+    text-transform: uppercase;
+    border-top: 1px solid #d6d8db;
+    background-color: #f6fafd;
+    padding: 6px;
+    font-weight: bold;
+  }
+
+ .dataset-tables {
+  padding: 20px 15px 10px 15px;
+ }
+ .xpand-button {
+  color: #1294b4;
+  padding: 3px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Quantico', sans-serif;
+ }
 }
