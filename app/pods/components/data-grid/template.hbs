@@ -1,55 +1,57 @@
 <header><h4>{{ title }}</h4></header>
-<table cellpadding="0" cellspacing="0">
-  <thead>
-  <tr>
-    <th>m_ticker</th>
-    <th>ticker</th>
-    <th>comp_name</th>
-    <th>comp_name_2</th>
-    <th>exchange</th>
-    <th>currency_code</th>
-    <th>per_end_date</th>
-    <th>per_type</th>
-    <th>per_code</th>
-    <th>per_fisc_year</th>
-    <th>per_fisc_qtr</th>
-    <th>per_cal_year</th>
-    <th>per_cal_qtr</th>
-    <th>rev_type</th>
-    <th>rev_type_desc</th>
-    <th>broker_name</th>
-    <th>analyst_name</th>
-    <th>eps_rev_date</th>
-    <th>eps_rev_est</th>
-    <th>eps_rev_date_prev</th>
-    <th>eps_rev_est_prev</th>
-  </tr>
-  </thead>
-  {{#each data as |row|}}
+<div class="table-wrapper">
+  <table cellpadding="0" cellspacing="0">
+    <thead>
     <tr>
-      <td>{{row.m_ticker}}</td>
-      <td>{{row.ticker}}</td>
-      <td>{{row.comp_name}}</td>
-      <td>{{row.comp_name_2}}</td>
-      <td>{{row.exchange}}</td>
-      <td>{{row.currency_code}}</td>
-      <td>{{row.per_end_date}}</td>
-      <td>{{row.per_type}}</td>
-      <td>{{row.per_code}}</td>
-      <td>{{row.per_fisc_year}}</td>
-      <td>{{row.per_fisc_qtr}}</td>
-      <td>{{row.per_cal_year}}</td>
-      <td>{{row.per_cal_qtr}}</td>
-      <td>{{row.rev_type}}</td>
-      <td>{{row.rev_type_desc}}</td>
-      <td>{{row.broker_name}}</td>
-      <td>{{row.analyst_name}}</td>
-      <td>{{row.eps_rev_date}}</td>
-      <td>{{row.eps_rev_est}}</td>
-      <td>{{row.eps_rev_date_prev}}</td>
-      <td>{{row.eps_rev_est_prev}}</td>
+      <th>m_ticker</th>
+      <th>ticker</th>
+      <th>comp_name</th>
+      <th>comp_name_2</th>
+      <th>exchange</th>
+      <th>currency_code</th>
+      <th>per_end_date</th>
+      <th>per_type</th>
+      <th>per_code</th>
+      <th>per_fisc_year</th>
+      <th>per_fisc_qtr</th>
+      <th>per_cal_year</th>
+      <th>per_cal_qtr</th>
+      <th>rev_type</th>
+      <th>rev_type_desc</th>
+      <th>broker_name</th>
+      <th>analyst_name</th>
+      <th>eps_rev_date</th>
+      <th>eps_rev_est</th>
+      <th>eps_rev_date_prev</th>
+      <th>eps_rev_est_prev</th>
     </tr>
-  {{/each}}
-</table>
+    </thead>
+    {{#each data as |row|}}
+      <tr>
+        <td>{{row.m_ticker}}</td>
+        <td>{{row.ticker}}</td>
+        <td>{{row.comp_name}}</td>
+        <td>{{row.comp_name_2}}</td>
+        <td>{{row.exchange}}</td>
+        <td>{{row.currency_code}}</td>
+        <td>{{row.per_end_date}}</td>
+        <td>{{row.per_type}}</td>
+        <td>{{row.per_code}}</td>
+        <td>{{row.per_fisc_year}}</td>
+        <td>{{row.per_fisc_qtr}}</td>
+        <td>{{row.per_cal_year}}</td>
+        <td>{{row.per_cal_qtr}}</td>
+        <td>{{row.rev_type}}</td>
+        <td>{{row.rev_type_desc}}</td>
+        <td>{{row.broker_name}}</td>
+        <td>{{row.analyst_name}}</td>
+        <td>{{row.eps_rev_date}}</td>
+        <td>{{row.eps_rev_est}}</td>
+        <td>{{row.eps_rev_date_prev}}</td>
+        <td>{{row.eps_rev_est_prev}}</td>
+      </tr>
+    {{/each}}
+  </table>
+</div>
 <footer>{{ footer }}</footer>
 {{yield}}

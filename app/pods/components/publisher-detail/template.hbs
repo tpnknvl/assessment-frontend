@@ -1,4 +1,41 @@
-<div class="detail">
-  Detail
+<div class="publisher-detail">
+  <h4 class="title">Commercial Data</h4>
+  <h5>Data Overview</h5>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+  <ul class="list">
+    <li>
+      <div class="label">Delivary Frequency</div>
+      {{ info-button }}
+      <div class="value">{{ data.deliveryFrequency }}</div>
+    </li>
+    <li>
+      <div class="label">Data Frequency</div>
+      {{ info-button }}
+      <div class="value">{{ data.dataFrequency }}</div>
+    </li>
+    <li>
+      <div class="label">Reporting Lag</div>
+      {{ info-button }}
+      <div class="value">{{ data.reportingLag }}</div>
+    </li>
+    <li>
+      <div class="label">History</div>
+      {{ info-button }}
+      <div class="value">{{ data.history }}</div>
+    </li>
+    <li>
+      <div class="label">Coverage</div>
+      {{ info-button }}
+      <div class="value">{{ data.coverage }}</div>
+    </li>
+  </ul>
+
+  <div class="tables-api">
+    <a href="#" class="border-link">Tables API</a>
+    {{ info-button }}
+  </div>
+  <a href="#" class="button-link" onclick={{ action "click" }}>Pricing</a>
+
+  {{yield}}
+
 </div>
-{{yield}}

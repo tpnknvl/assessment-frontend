@@ -1,7 +1,7 @@
 <h3>Product Page - Index - {{publisher.title}}</h3>
 
 <div class="content-wrapper">
-  <div class="column">
+  <div class="column main-content">
     <div class="dataset-tables">
       <div class="description">Datasets in this data product</div>
       {{#each products as |product|}}
@@ -17,7 +17,7 @@
       {{outlet}}
     </div>
   </div>
-  <div class="column">
+  <div class="column sidebar">
     {{ publisher-detail data=publisher }}
   </div>
 </div>
