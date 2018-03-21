@@ -3,20 +3,20 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
 @import url('https://fonts.googleapis.com/css?family=Quantico');
 
-$sidebar-width: 350px;
+$sidebar-width: 450px;
 
 body {
   margin           : 0;
   padding          : 0;
   font-weight      : 300;
-  font-size        : 12px;
+  font-size        : 14px;
   font-family      : 'Source Sans Pro', sans-serif;
   background-color : #f6fafd;
   min-width        : 768px;
 }
 p {
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 #header-navigation {
@@ -26,12 +26,14 @@ p {
   font-weight      : normal;
   justify-content  : space-between;
 
-  a {
-    color          : #fff;
-    text-transform : uppercase;
-    padding        : 15px 10px;
-    cursor         : pointer;
-    display        : block;
+  .menu-items {
+    a {
+      color          : #fff;
+      text-transform : uppercase;
+      padding        : 15px;
+      cursor         : pointer;
+      display        : block;
+    }
   }
 
   ul, li {
@@ -40,8 +42,10 @@ p {
     list-style : none;
   }
 
-  li a:hover, li.active a {
-    background-color: #07485f;
+  .left-menu {
+    li a:hover, li.active a {
+      background-color: #07485f;
+    }
   }
 
   .left-menu {
@@ -91,11 +95,11 @@ table {
     background-color: #f6fafd;
   }
     th, td {
-      padding       : 6px;
+      padding       : 6px 10px;
       border-bottom : 1px solid #eff0f2;
     }
     th {
-      padding: 8px 6px;
+      padding: 8px 10px;
     }
   td {
     border-bottom: 1px solid #eff0f2;
@@ -104,7 +108,6 @@ table {
 
 .content-wrapper {
   display: flex;
-  min-width: 500px;
   justify-content: space-between;
 
   .main-content {
@@ -200,7 +203,10 @@ table {
       text-transform: uppercase;
     }
     .value {
-      float: right;
+      color          : #0f4755;
+      float          : right;
+      font-size      : 16px;
+      text-transform : capitalize;
     }
   }
   .tables-api {

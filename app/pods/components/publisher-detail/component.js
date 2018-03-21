@@ -5,7 +5,7 @@ export default Component.extend({
   actions: {
     click( e ) {
       e.preventDefault();
-      console.log( 'Clicked pricing' );
+      console.log( 'Clicked' );
     }
   }
 });
