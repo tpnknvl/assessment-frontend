@@ -1,4 +1,19 @@
-{{link-to 'Product page' 'products'}}
-
-{{ data-grid data=productData }}
-{{ outlet }}
+<div class="product-show">
+  <div class="page-title">
+    <span></span>
+    {{#link-to 'products' }}<h2>{{ publisher.title }}</h2>{{/link-to}}
+  </div>
+  <div class="header">
+    <h4>Name</h4>
+    <div class="actions">
+      <button class="clear-button" onclick={{ action "click" }}>Coverage</button>
+      <button class="regular-button" onclick={{ action "click" }}>Download</button>
+    </div>
+  </div>
+  <div class="tab-bar">
+    <button class="active tab" onclick={{ action "click" }}>Data Sample</button>
+    <button class="tab" onclick={{ action "click" }}>Coverage</button>
+  </div>
+  {{ data-grid data=productData }}
+  {{ outlet }}
+</div>
