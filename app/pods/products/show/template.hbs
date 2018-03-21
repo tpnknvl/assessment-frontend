@@ -1,13 +1,16 @@
 <div class="product-show">
   <div class="page-title">
-    <span></span>
-    {{#link-to 'products' }}<h2>{{ publisher.title }}</h2>{{/link-to}}
+    {{#link-to 'products' }}
+      <span class="icon-chevron-left"></span>
+      <img src="/assets/avatar.png" width="40">
+      <h2>{{ publisher.title }}</h2>
+    {{/link-to}}
   </div>
   <div class="header">
-    <h4>Name</h4>
+    <h4>{{ product.name }}</h4>
     <div class="actions">
       <button class="clear-button" onclick={{ action "click" }}>Coverage</button>
-      <button class="regular-button" onclick={{ action "click" }}>Download</button>
+      <button class="download-button" onclick={{ action "click" }}>Download <span class="icon-download"></span></button>
     </div>
   </div>
   <div class="tab-bar">
